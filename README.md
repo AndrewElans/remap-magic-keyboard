@@ -2,23 +2,23 @@
 
 - Unified key mapping of apple Magic Keyboard for windows/macOS, including Microsoft Remote Desktop App (RDP) on Mac in US layout
 - Use **one** hand on <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>I</kbd> with thumb on <kbd>R CMD</kbd> to navigate text and browser tabs:
-  - <kbd>J</kbd>+<kbd>R CMD</kbd> -> one char left
-  - <kbd>L</kbd>+<kbd>R CMD</kbd> -> one char right
-  - <kbd>K</kbd>+<kbd>R CMD</kbd> -> one line down
-  - <kbd>I</kbd>+<kbd>R CMD</kbd> -> one line up
-  - <kbd>]</kbd>+<kbd>R CMD</kbd> -> tab left (browser, vs code)
-  - <kbd>\</kbd>+<kbd>R CMD</kbd> -> tab right (browser, vs code)
-  - <kbd>'</kbd>+<kbd>R CMD</kbd> -> pagedown
-  - <kbd>[</kbd>+<kbd>R CMD</kbd> -> pageup
-  - <kbd>Backspace</kbd>+<kbd>R CMD</kbd> -> backspace
-  - <kbd>=</kbd>+<kbd>R CMD</kbd> -> delete
-  - <kbd>Enter</kbd>+<kbd>R CMD</kbd> -> enter
-  - <kbd>H</kbd>+<kbd>R CMD</kbd> -> one word left
-  - <kbd>;</kbd>+<kbd>R CMD</kbd> -> one word right
-  - <kbd>U</kbd>+<kbd>R CMD</kbd> -> home
-  - <kbd>M</kbd>+<kbd>R CMD</kbd> -> end
-  - <kbd>N</kbd>+<kbd>R CMD</kbd> -> line start
-  - <kbd>/</kbd>+<kbd>R CMD</kbd> -> line end
+  - <kbd>J</kbd> + <kbd>R CMD</kbd> -> one char left
+  - <kbd>L</kbd> + <kbd>R CMD</kbd> -> one char right
+  - <kbd>K</kbd> + <kbd>R CMD</kbd> -> one line down
+  - <kbd>I</kbd> + <kbd>R CMD</kbd> -> one line up
+  - <kbd>]</kbd> + <kbd>R CMD</kbd> -> tab left (browser, vs code)
+  - <kbd>/\</kbd> + <kbd>R CMD</kbd> -> tab right (browser, vs code)
+  - <kbd>'</kbd> + <kbd>R CMD</kbd> -> pagedown
+  - <kbd>[</kbd> + <kbd>R CMD</kbd> -> pageup
+  - <kbd>Backspace</kbd> + <kbd>R CMD</kbd> -> backspace
+  - <kbd>=</kbd> +<kbd>R CMD</kbd> -> delete
+  - <kbd>Enter</kbd> + <kbd>R CMD</kbd> -> enter
+  - <kbd>H</kbd> + <kbd>R CMD</kbd> -> one word left
+  - <kbd>;</kbd> + <kbd>R CMD</kbd> -> one word right
+  - <kbd>U</kbd> + <kbd>R CMD</kbd> -> home
+  - <kbd>M</kbd> + <kbd>R CMD</kbd> -> end
+  - <kbd>N</kbd> + <kbd>R CMD</kbd> -> line start
+  - <kbd>/</kbd> + <kbd>R CMD</kbd> -> line end
 
 ## Setup on Mac
 - install karabiner-elements.pqrs.org
