@@ -1,0 +1,347 @@
+{
+    "description": "common",
+    "manipulators": [
+        { // j+rcmd -> one char left
+            "from": {
+                "key_code": "j",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow"
+                }
+            ],
+            "type": "basic"
+        },
+        { // l+rcmd -> one char right
+            "from": {
+                "key_code": "l",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow"
+                }
+            ],
+            "type": "basic"
+        },
+        { // k+rcmd -> one line down
+            "from": {
+                "key_code": "k",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "down_arrow"
+                }
+            ],
+            "type": "basic"
+        },
+        { // i+rcmd -> one line up
+            "from": {
+                "key_code": "i",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "up_arrow"
+                }
+            ],
+            "type": "basic"
+        },
+        { // ]+rcmd -> tab left
+            "from": {
+                "key_code": "close_bracket",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "tab",
+                    "modifiers": [
+                        "control",
+                        "shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        { // \+rcmd -> tab right
+            "from": {
+                "key_code": "backslash",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "tab",
+                    "modifiers": [
+                        "control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        { // '+rcmd -> pagedown
+            "from": {
+                "key_code": "quote",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "page_down"
+                }
+            ],
+            "type": "basic"
+        },
+        { // [+rcmd -> pageup
+            "from": {
+                "key_code": "open_bracket",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "page_up"
+                }
+            ],
+            "type": "basic"
+        },
+        { // backspace+rcmd -> backspace
+            "from": {
+                "key_code": "delete_or_backspace",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "delete_or_backspace"
+                }
+            ],
+            "type": "basic"
+        },
+        { // equal+rcmd -> delete
+            "from": {
+                "key_code": "equal_sign",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "delete_forward"
+                }
+            ],
+            "type": "basic"
+        },
+        { // enter+rcmd -> enter
+            "from": {
+                "key_code": "return_or_enter",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "return_or_enter"
+                }
+            ],
+            "type": "basic"
+        },
+        { // h+rcmd -> one word left RDP SPECIFIC
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                        "option"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        { // ;+rcmd -> one word right RDP SPECIFIC
+            "from": {
+                "key_code": "semicolon",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                        "right_option"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        { // u+rcmd -> home RDP SPECIFIC
+            "from": {
+                "key_code": "u",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                        "command"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        { // m+rcmd -> end RDP SPECIFIC
+            "from": {
+                "key_code": "m",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                        "command"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        { // n+rcmd -> line start RDP SPECIFIC
+            "from": {
+                "key_code": "n",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                        "command"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        { // /+rcmd -> line end
+            "from": {
+                "key_code": "slash",
+                "modifiers": {
+                    "mandatory": [
+                        "right_control"
+                    ],
+                    "optional": [
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                        "command"
+                    ]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
