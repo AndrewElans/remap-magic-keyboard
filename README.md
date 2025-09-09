@@ -1,33 +1,32 @@
 # remap-magic-keyboard
 
-- Unified key mapping of apple Magic Keyboard for windows/macOS, including Microsoft Remote Desktop App (RDP) on Mac.
-- Use **one** hand on <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>I</kbd> with thumb on <kbd>R Command</kbd> to navigate text and browser tabs:
- - j+rcmd -> one char left
- - l+rcmd -> one char right
- - k+rcmd -> one line down
- - i+rcmd -> one line up
- - ]+rcmd -> tab left (browser, vs code)
- - \+rcmd -> tab right (browser, vs code)
- - '+rcmd -> pagedown
- - [+rcmd -> pageup
- - backspace+rcmd -> backspace
- - equal+rcmd -> delete
- - enter+rcmd -> enter
- - h+rcmd -> one word left
- - ;+rcmd -> one word right
- - u+rcmd -> home
- - m+rcmd -> end
- - n+rcmd -> line start
- - /+rcmd -> line end
-
+- Unified key mapping of apple Magic Keyboard for windows/macOS, including Microsoft Remote Desktop App (RDP) on Mac in US layout
+- Use **one** hand on <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>I</kbd> with thumb on <kbd>R CMD</kbd> to navigate text and browser tabs:
+  - <kbd>J</kbd>+<kbd>R CMD</kbd> -> one char left
+  - <kbd>L</kbd>+<kbd>R CMD</kbd> -> one char right
+  - <kbd>K</kbd>+<kbd>R CMD</kbd> -> one line down
+  - <kbd>I</kbd>+<kbd>R CMD</kbd> -> one line up
+  - <kbd>]</kbd>+<kbd>R CMD</kbd> -> tab left (browser, vs code)
+  - <kbd>\</kbd>+<kbd>R CMD</kbd> -> tab right (browser, vs code)
+  - <kbd>'</kbd>+<kbd>R CMD</kbd> -> pagedown
+  - <kbd>[</kbd>+<kbd>R CMD</kbd> -> pageup
+  - <kbd>Backspace</kbd>+<kbd>R CMD</kbd> -> backspace
+  - <kbd>=</kbd>+<kbd>R CMD</kbd> -> delete
+  - <kbd>Enter</kbd>+<kbd>R CMD</kbd> -> enter
+  - <kbd>H</kbd>+<kbd>R CMD</kbd> -> one word left
+  - <kbd>;</kbd>+<kbd>R CMD</kbd> -> one word right
+  - <kbd>U</kbd>+<kbd>R CMD</kbd> -> home
+  - <kbd>M</kbd>+<kbd>R CMD</kbd> -> end
+  - <kbd>N</kbd>+<kbd>R CMD</kbd> -> line start
+  - <kbd>/</kbd>+<kbd>R CMD</kbd> -> line end
 
 ## Setup on Mac
 - install karabiner-elements.pqrs.org
 - Simple Modifications -> add for All Devices -> `right_command -> right_control` 
-- Complex Modifications -> `Add your own rule` (copy code from files in repo):
- - `common`
- - `RDP`
- - `RDP other`
+- Complex Modifications -> `Add your own rule` -> add 3 rules coping code from files in repo:
+  - `common`
+  - `RDP`
+  - `RDP other`
 
 ## Setup on Windows
 - coming...
