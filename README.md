@@ -41,5 +41,5 @@
 - install [autohotkey](https://www.autohotkey.com/download/)
 - get repo file `MagicKeyboardShort.ahk` and run
 - add this file to autostart on Windows:
-  - <kbd>Win + R</kbd> -> type `shell:starup`
+  - <kbd>Win + R</kbd> -> type `shell:startup`
   - drag and drop the file into this folder
