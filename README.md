@@ -29,4 +29,17 @@
   - `RDP other`
 
 ## Setup on Windows
-- coming...
+
+### SharpKeys
+- install [github.com/randyrants/sharpkeys](https://github.com/randyrants/sharpkeys) and run
+- remap:
+  - `Left Ctrl (00_1D)` to `Left Windows (E0_5B)`
+  - `Left Windows (E0_5B)` to `Left Ctrl (00_1D)`
+  - `Right Windows (E0_5C)` to `Right Ctrl (E0_1D)`
+
+### AutoHotKey 
+- install [autohotkey](https://www.autohotkey.com/download/)
+- get repo file `MagicKeyboardShort.ahk` and run
+- add this file to autostart on Windows:
+  - <kbd>Win + R</kbd> -> type `shell:starup`
+  - drag and drop the file into this folder
