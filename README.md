@@ -7,7 +7,7 @@
   - <kbd>K</kbd> + <kbd>R CMD</kbd> -> one line down
   - <kbd>I</kbd> + <kbd>R CMD</kbd> -> one line up
   - <kbd>]</kbd> + <kbd>R CMD</kbd> -> tab left (browser, vs code)
-  - <kbd>/\</kbd> + <kbd>R CMD</kbd> -> tab right (browser, vs code)
+  - <kbd>\\</kbd> + <kbd>R CMD</kbd> -> tab right (browser, vs code)
   - <kbd>'</kbd> + <kbd>R CMD</kbd> -> pagedown
   - <kbd>[</kbd> + <kbd>R CMD</kbd> -> pageup
   - <kbd>Backspace</kbd> + <kbd>R CMD</kbd> -> backspace
