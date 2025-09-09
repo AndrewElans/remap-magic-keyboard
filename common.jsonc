@@ -321,7 +321,7 @@
             ],
             "type": "basic"
         },
-        { // /+rcmd -> line end
+        { // /+rcmd -> line end RDP SPECIFIC
             "from": {
                 "key_code": "slash",
                 "modifiers": {
