@@ -21,7 +21,7 @@
   - <kbd>/</kbd> + <kbd>R CMD</kbd> -> line end
 
 ## Setup on Mac
-- install karabiner-elements.pqrs.org
+- install [Karabiner](https://karabiner-elements.pqrs.org)
 - Simple Modifications -> add for All Devices -> `right_command -> right_control` 
 - Complex Modifications -> `Add your own rule` -> add 3 rules coping code from files in repo:
   - `common`
