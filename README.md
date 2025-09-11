@@ -35,7 +35,7 @@
 - remap:
   - `Left Ctrl (00_1D)` to `Left Windows (E0_5B)`
   - `Left Windows (E0_5B)` to `Left Ctrl (00_1D)`
-  - `Right Windows (E0_5C)` to `Right Ctrl (E0_1D)`
+  - `Right Windows (E0_5C)` to `Function: F13 (00_64)`
 
 ### AutoHotKey 
 - install [autohotkey](https://www.autohotkey.com/download/)

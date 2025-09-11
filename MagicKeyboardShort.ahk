@@ -1,61 +1,79 @@
-; >^ is RCtrl
+; >^ is RCtrl     
 ; <^ is LCtrl
 ; <! is LAlt
 ; <+ is LShift
 
+;F13 & a::return
+;F13 & b::return
+;F13 & p::return
+              
 ;j+rcmd -> one char left 
->^j::Left
+;>^j::Left
+F13 & j::Left
 
 ; l+rcmd -> one char right
->^l::right
+;>^l::right
+F13 & l::right
 
 ; k+rcmd -> one char down
->^k::down
+;>^k::down
+F13 & k::down
 
 ; i+rcmd -> one char up
->^i::up
+;>^i::up
+F13 & i::up
 
 ; n+rcmd -> line start
->^n::HOME
+;>^n::HOME
+F13 & n::HOME
 
 ; /+rcmd -> line end
->^/::END
+;>^/::END
+F13 & /::END
 
 ; ]+rcmd -> tab left
->^]::Send "^{PgUp}"
+;>^]::Send "^{PgUp}"
+F13 & ]::Send "{Blind}^{PgUp}"
 
 ; \+rcmd -> tab right
->^\::Send "^{PgDn}"
+;>^\::Send "^{PgDn}"
+F13 & \::Send "{Blind}^{PgDn}"
 
 ; '+rcmd -> page down
->^'::PgDn
+;>^'::PgDn
+F13 & '::PgDn
 
 ; [+rcmd -> page up
->^[::PgUp
+;>^[::PgUp
+F13 & [::PgUp
 
 ; backspace+rcmd to backspace
->^Backspace::Backspace
+;>^Backspace::Backspace
+F13 & Backspace::Backspace
 
 ; equal+rcmd to delete
->^=::Delete
+;>^=::Delete
+F13 & =::Delete
 
 ; enter+rcmd to enter
->^Enter::Enter
+;>^Enter::Enter
+F13 & Enter::Enter
 
 ; h+rcmd -> one word left
->^h::Send "^{Left}"
+;>^h::Send "^{Left}"
+F13 & h::Send "{Blind}^{Left}"
 
-; ;+rcmd -> one word left
->^;::Send "^{Right}"
-
-
->^<!<+l::Send "^+{Right}"
+; ;+rcmd -> one word right
+;>^;::Send "^{Right}"
+F13 & SC027::Send "{Blind}^{Right}"
 
 ; u+rcmd -> home
->^u::Send "^{HOME}"
+;>^u::Send "^{HOME}"
+F13 & u::Send "{Blind}^{HOME}"
 
 ; m+rcmd -> home
->^m::Send "^{END}"
+;>^m::Send "^{END}"
+F13 & m::Send "{Blind}^{END}"
 
 ; lcmd+tab to AltTab
 <^TAB::AltTab
@@ -64,4 +82,14 @@
 <^q::!f4
 
 ; rcmd+Space to AppsKey (R Special Win Option)
->^Space::Send "{AppsKey}"
+;>^Space::Send "{AppsKey}"
+F13 & Space::Send "{AppsKey}"
+
+; Send Ctrl+, for vs code (navigation back)
+F13 & ,::Send "^{,}"
+
+; Send Ctrl+. for vs code (navigation forw)
+F13 & .::Send "^{.}"
+
+; Send Ctrl+` for vs code (open terminal)
+F13 & `::Send "^{``}"
