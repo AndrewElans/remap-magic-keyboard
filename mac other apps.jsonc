@@ -65,7 +65,15 @@
                     "optional": ["any"]
                 }
             },
-            "to": [{ "key_code": "vk_none" }],
+            "to": [
+                {
+                    "key_code": "q",
+                    "modifiers": [
+                        "left_command",
+                        "right_control"
+                    ]
+                }
+            ],
             "type": "basic"
         },
         { // vscode cmd+q
@@ -85,7 +93,13 @@
                 }
             },
             "to": [
-                { "key_code": "vk_none" }
+                {
+                    "key_code": "w",
+                    "modifiers": [
+                        "left_command",
+                        "right_control"
+                    ]
+                }
             ],
             "type": "basic"
         }
