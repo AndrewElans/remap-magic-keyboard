@@ -1,7 +1,7 @@
 {
     "description": "mac other apps  -> disable cmd+q, cmd+w",
     "manipulators": [
-        { // iPhone Mirroring app cmd+q to avoid accidental close
+        { // iPhone Mirroring app cmd+Q to avoid accidental close
             "conditions": [
                 {
                     "bundle_identifiers": [
@@ -13,23 +13,22 @@
             "from": {
                 "key_code": "q",
                 "modifiers": {
-                    "mandatory": ["command"],
-                    "optional": ["any"]
+                    "mandatory": [
+                        "command"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
                 }
             },
-            "to": [{ "key_code": "vk_none" }],
-            // "to": [
-            //     {
-            //         "key_code": "q",
-            //         "modifiers": [
-            //             "left_command",
-            //             "right_control"
-            //         ]
-            //     }
-            // ],
+            "to": [
+                {
+                    "key_code": "vk_none"
+                }
+            ],
             "type": "basic"
         },
-        { // iPhone Mirroring app cmd+w to avoid accidental close
+        { // iPhone Mirroring app cmd+W to avoid accidental close
             "conditions": [
                 {
                     "bundle_identifiers": [
@@ -41,19 +40,26 @@
             "from": {
                 "key_code": "w",
                 "modifiers": {
-                    "mandatory": ["command"],
-                    "optional": ["any"]
+                    "mandatory": [
+                        "command"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
                 }
             },
-            "to": [{ "key_code": "vk_none" }],
+            "to": [
+                {
+                    "key_code": "vk_none"
+                }
+            ],
             "type": "basic"
         },
-        { // vscode cmd+q
+        { // vscode disable cmd+Q
             "conditions": [
                 {
                     "bundle_identifiers": [
                         "^com\\.microsoft\\.VSCode$"
-
                     ],
                     "type": "frontmost_application_if"
                 }
@@ -61,22 +67,47 @@
             "from": {
                 "key_code": "q",
                 "modifiers": {
-                    "mandatory": ["command"],
-                    "optional": ["any"]
+                    "mandatory": [
+                        "command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "vk_none"
+                }
+            ],
+            "type": "basic"
+        },
+        { // vscode cmd+Q -> Lcmd+Rcmd+Q
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.VSCode$"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "q",
+                "modifiers": {
+                    "mandatory": [
+                        "command",
+                        "right_control"
+                    ]
                 }
             },
             "to": [
                 {
                     "key_code": "q",
                     "modifiers": [
-                        "left_command",
-                        "right_control"
+                        "command"
                     ]
                 }
             ],
             "type": "basic"
         },
-        { // vscode cmd+q
+        { // vscode disabled cmd+W
             "conditions": [
                 {
                     "bundle_identifiers": [
@@ -88,16 +119,41 @@
             "from": {
                 "key_code": "w",
                 "modifiers": {
-                    "mandatory": ["command"],
-                    "optional": ["any"]
+                    "mandatory": [
+                        "command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "vk_none"
+                }
+            ],
+            "type": "basic"
+        },
+        { // vscode cmd+W -> Lcmd+Rcmd+W
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.VSCode$"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "w",
+                "modifiers": {
+                    "mandatory": [
+                        "command",
+                        "right_control"
+                    ]
                 }
             },
             "to": [
                 {
                     "key_code": "w",
                     "modifiers": [
-                        "left_command",
-                        "right_control"
+                        "command"
                     ]
                 }
             ],
