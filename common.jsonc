@@ -211,7 +211,16 @@
             ],
             "type": "basic"
         },
-        { // h+rcmd -> one word left RDP SPECIFIC
+        { // h+rcmd -> one word left UNLESS RDP
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.rdc\\.macos$",
+                        "^com\\.microsoft\\.rdc\\.osx\\.beta$"
+                    ],
+                    "type": "frontmost_application_unless"
+                }
+            ],
             "from": {
                 "key_code": "h",
                 "modifiers": {
@@ -233,7 +242,16 @@
             ],
             "type": "basic"
         },
-        { // ;+rcmd -> one word right RDP SPECIFIC
+        { // ;+rcmd -> one word right UNLESS RDP
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.rdc\\.macos$",
+                        "^com\\.microsoft\\.rdc\\.osx\\.beta$"
+                    ],
+                    "type": "frontmost_application_unless"
+                }
+            ],
             "from": {
                 "key_code": "semicolon",
                 "modifiers": {
@@ -255,7 +273,16 @@
             ],
             "type": "basic"
         },
-        { // u+rcmd -> home RDP SPECIFIC
+        { // u+rcmd -> home UNLESS RDP
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.rdc\\.macos$",
+                        "^com\\.microsoft\\.rdc\\.osx\\.beta$"
+                    ],
+                    "type": "frontmost_application_unless"
+                }
+            ],
             "from": {
                 "key_code": "u",
                 "modifiers": {
@@ -277,7 +304,16 @@
             ],
             "type": "basic"
         },
-        { // m+rcmd -> end RDP SPECIFIC
+        { // m+rcmd -> end UNLESS RDP
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.rdc\\.macos$",
+                        "^com\\.microsoft\\.rdc\\.osx\\.beta$"
+                    ],
+                    "type": "frontmost_application_unless"
+                }
+            ],
             "from": {
                 "key_code": "m",
                 "modifiers": {
@@ -299,7 +335,16 @@
             ],
             "type": "basic"
         },
-        { // n+rcmd -> line start RDP SPECIFIC
+        { // n+rcmd -> line start UNLESS RDP
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.rdc\\.macos$",
+                        "^com\\.microsoft\\.rdc\\.osx\\.beta$"
+                    ],
+                    "type": "frontmost_application_unless"
+                }
+            ],
             "from": {
                 "key_code": "n",
                 "modifiers": {
@@ -321,7 +366,16 @@
             ],
             "type": "basic"
         },
-        { // /+rcmd -> line end RDP SPECIFIC
+        { // /+rcmd -> line end UNLESS RDP
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.rdc\\.macos$",
+                        "^com\\.microsoft\\.rdc\\.osx\\.beta$"
+                    ],
+                    "type": "frontmost_application_unless"
+                }
+            ],
             "from": {
                 "key_code": "slash",
                 "modifiers": {

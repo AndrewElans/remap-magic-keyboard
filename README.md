@@ -23,10 +23,10 @@
 ## Setup on Mac
 - install [Karabiner](https://karabiner-elements.pqrs.org)
 - Simple Modifications -> add for All Devices -> `right_command -> right_control` 
-- Complex Modifications -> `Add your own rule` -> add 3 rules coping code from files in repo (order is important):
-  1) `RDP` - shall be top
-  2) `RDP other`
-  3) `common`
+- Complex Modifications -> `Add your own rule` -> add 3 rules coping code from files in repo:
+  1) `common`
+  2) `RDP`
+  3) `RDP other`
 
 ## Setup on Windows
 
