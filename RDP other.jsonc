@@ -68,7 +68,7 @@
             "to": [{ "key_code": "left_command" }],
             "type": "basic"
         },
-        { // tab 
+        { // tab+Lcmd -> tab+opt
             "conditions": [
                 {
                     "bundle_identifiers": [
@@ -93,7 +93,7 @@
             ],
             "type": "basic"
         },
-        { // tab
+        { // tab+Lcmd+Rcmd -> tab+Lcmd
             "conditions": [
                 {
                     "bundle_identifiers": [
