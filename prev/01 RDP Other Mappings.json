@@ -1,0 +1,44 @@
+{
+    "description": "RDP Other Mappings",
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.rdc\\.macos$",
+                        "^com\\.microsoft\\.rdc\\.osx\\.beta$"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "q",
+                "modifiers": { "mandatory": ["left_control"] }
+            },
+            "to": [
+                {
+                    "key_code": "f4",
+                    "modifiers": ["left_option"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.rdc\\.macos$",
+                        "^com\\.microsoft\\.rdc\\.osx\\.beta$"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "spacebar",
+                "modifiers": { "mandatory": ["right_control"] }
+            },
+            "to": [{ "key_code": "application" }],
+            "type": "basic"
+        }
+    ]
+}

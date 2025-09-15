@@ -1,0 +1,7 @@
+fn (globe) -> left_option
+left_option -> fn (globe)
+
+caps_lock -> right_option
+right_option -> caps_lock
+
+right_command -> right_control

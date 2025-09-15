@@ -1,0 +1,61 @@
+{
+    "description": "iphone app disable cmd+q, cmd+w",
+    "manipulators": [
+        { 
+            "conditions": [
+                { // com.apple.ScreenContinuity
+                // /System/Applications/iPhone Mirroring.app/Contents/MacOS/iPhone Mirroring
+                    "bundle_identifiers": [
+                        "^com\\.apple\\.ScreenContinuity$"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "q",
+                "modifiers": {
+                    "mandatory": [
+                        "command"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "vk_none"
+                }
+            ],
+            "type": "basic"
+        },
+        { 
+            "conditions": [
+                { // com.apple.ScreenContinuity
+                // /System/Applications/iPhone Mirroring.app/Contents/MacOS/iPhone Mirroring
+                    "bundle_identifiers": [
+                        "^com\\.apple\\.ScreenContinuity$"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "w",
+                "modifiers": {
+                    "mandatory": [
+                        "command"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "vk_none"
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
