@@ -244,6 +244,48 @@
       "type": "basic"
     },
     {
+      "description": ",+rcmd -> ctrl+, for vs code back",
+      "conditions": [
+        {
+          "name": "f13_pressed",
+          "type": "variable_if",
+          "value": true
+        }
+      ],
+      "from": {
+        "key_code": "comma",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [
+        {
+          "key_code": "comma",
+          "modifiers": ["right_control"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": ".+rcmd -> ctrl+; for vs code Go Forward",
+      "conditions": [
+        {
+          "name": "f13_pressed",
+          "type": "variable_if",
+          "value": true
+        }
+      ],
+      "from": {
+        "key_code": "period",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [
+        {
+          "key_code": "period",
+          "modifiers": ["right_control"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
       "description": "h+rcmd -> one word left UNLESS RDP",
       "conditions": [
         {
