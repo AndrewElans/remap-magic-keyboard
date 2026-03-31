@@ -93,3 +93,6 @@ F13 & .::Send "^{.}"
 
 ; Send Ctrl+` for vs code (open terminal)
 F13 & `::Send "^{``}"
+
+; Ctrl + Alt + Delete is now requirement on Work PC, I remap F8 to Delete with SharpKeys and use the following combination for F8 if I need F8
+F13 & Delete:: Send("{F8}")
