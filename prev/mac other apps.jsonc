@@ -78,6 +78,86 @@
                 }
             ],
             "type": "basic"
+        },
+        { // vscode cmd+Q -> Lcmd+Rcmd+Q
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.VSCode$"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "q",
+                "modifiers": {
+                    "mandatory": [
+                        "command",
+                        "right_control"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "q",
+                    "modifiers": [
+                        "command"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        { // vscode disabled cmd+W
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.VSCode$"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "w",
+                "modifiers": {
+                    "mandatory": [
+                        "command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "vk_none"
+                }
+            ],
+            "type": "basic"
+        },
+        { // vscode cmd+W -> Lcmd+Rcmd+W
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.VSCode$"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "w",
+                "modifiers": {
+                    "mandatory": [
+                        "command",
+                        "right_control"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "w",
+                    "modifiers": [
+                        "command"
+                    ]
+                }
+            ],
+            "type": "basic"
         }
     ]
 }
